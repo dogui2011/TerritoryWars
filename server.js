@@ -14,7 +14,7 @@ const lobbies = new Map();
 
 const lt = String.fromCharCode(60);
 const gt = String.fromCharCode(62);
-app.get('/', (_req, res) => res.send(lt + 'html' + gt + lt + 'head' + gt + lt + 'meta charset="UTF-8"' + gt + lt + 'meta name="viewport" content="width=device-width,initial-scale=1"' + gt + lt + 'title' + gt + 'Territory Wars' + lt + '/title' + gt + lt + 'link rel="stylesheet" href="/css/styles.css"' + gt + lt + '/head' + gt + lt + 'body' + gt + lt + 'div id="app"' + gt + lt + '/div' + gt + lt + 'script src="/socket.io/socket.io.js"' + gt + lt + '/script' + gt + lt + 'script src="/js/game.js"' + gt + lt + '/script' + gt + lt + '/body' + gt + lt + '/html' + gt));
+app.get('/', (_req, res) => res.send(lt + 'html' + gt + lt + 'head' + gt + lt + 'meta charset="UTF-8"' + gt + lt + 'meta name="viewport" content="width=device-width,initial-scale=1"' + gt + lt + 'title' + gt + 'FrontsWars' + lt + '/title' + gt + lt + 'link rel="stylesheet" href="/css/styles.css"' + gt + lt + '/head' + gt + lt + 'body' + gt + lt + 'div id="app"' + gt + lt + '/div' + gt + lt + 'script src="/socket.io/socket.io.js"' + gt + lt + '/script' + gt + lt + 'script src="/js/game.js"' + gt + lt + '/script' + gt + lt + '/body' + gt + lt + '/html' + gt));
 app.use(express.static(path.join(__dirname, 'public')));
 app.get('/health', (_req, res) => res.json({ ok: true, lobbies: lobbies.size }));
 
@@ -190,4 +190,4 @@ io.on('connection', (socket) => {
   socket.on('disconnect', () => leaveLobby(socket));
 });
 
-httpServer.listen(PORT, '0.0.0.0', () => console.log('TerritoryWars listening on port ' + PORT));
+httpServer.listen(PORT, '0.0.0.0', () => console.log('FrontsWars listening on port ' + PORT));
