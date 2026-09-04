@@ -1,13 +1,19 @@
 {
-  "name": "territory-wars",
+  "name": "frontswars",
   "version": "1.0.0",
-  "description": "Multiplayer territory conquest battle royale game",
+  "description": "FrontsWars multiplayer territory conquest battle royale game",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "keywords": ["multiplayer", "battle-royale", "territory", "game", "io-game"],
+  "keywords": [
+    "multiplayer",
+    "battle-royale",
+    "territory",
+    "frontswars",
+    "game"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
