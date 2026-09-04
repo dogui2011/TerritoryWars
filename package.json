@@ -1,7 +1,7 @@
 {
   "name": "frontswars",
   "version": "1.0.0",
-  "description": "FrontsWars multiplayer territory conquest battle royale game",
+  "description": "FrontsWars.io multiplayer territory conquest battle royale game",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
